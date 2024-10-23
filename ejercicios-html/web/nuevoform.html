@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NUEVO FORMULARIO</title>
+</head>
+<body>
+	<form action="https://www.w3schools.com/action_page.php" method="post">
+	<fieldset>
+		<legend>RECETA</legend>
+        <label for="nombre">Nombre: </label> <br>
+        <input name="nombre" id="nombre" type="text"> <br><br>
+        <label for="correo">Correo Autor: </label> <br>
+        <input name="correo" id="correo" type="correo"><br><br> 
+        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno <br><br>
+        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo <br><br>
+        <input name="momento[]" type="checkbox" value="Merienda"> Merienda <br><br>
+        <input name="momento[]" type="checkbox" value="Cena"> Cena <br><br>
+        <input name="momento[]" type="checkbox" value="Postre"> Postre <br><br>
+        <label for="ingredientes">Ingredientes: </label> <br><br>
+         <select multiple name="ingredientes[]" id="ingredientes">
+        	<optgroup label="Carne">
+        		<option>Ternera</option>
+        		<option>Cerdo</option>
+        		<option>Pollo</option>
+        	</optgroup>
+        	<optgroup label="Pescado">
+        		<option>Bacalao</option>
+        		<option>Merluza</option>
+        		<option>Atún</option>
+        	</optgroup>
+        	<optgroup label="Verdura">
+        		<option>Lechuga</option>
+        		<option>Zanahoria</option>
+        		<option>Cebolla</option>
+        	</optgroup>
+        	<optgroup label="Fruta">
+        		<option>Tomate</option>
+        		<option>Manzana</option>
+        		<option>Plátano</option>
+        	</optgroup>
+
+        </select> <br><br>
+
+        <input type="radio" id="horas" name="horas">
+        <label for="horas">0</label>
+        <input type="radio" id="horas" name="horas">
+        <label for="age2">1</label>
+        <input type="radio" id="horas" name="horas">
+        <label for="age2">2</label><br> 
+        <input type="radio" name="minutos">
+        <label for="horas">15</label>
+        <input type="radio" name="minutos">
+        <label for="horas">30</label>
+        <input type="radio" name="minutos">
+        <label for="horas">45</label>
+        <input type="radio" name="minutos">
+        <label for="horas">60</label>
+	</fieldset>
+	<input type="submit" name="Enviar">
+	</form>
+</body>
+</html>
